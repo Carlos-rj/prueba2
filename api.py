@@ -1,4 +1,3 @@
-from os import environ
 from flask import Flask, jsonify, render_template, redirect, url_for, request
 from flask_cors import CORS, cross_origin
 from users import User
