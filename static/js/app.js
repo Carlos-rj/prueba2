@@ -45,7 +45,7 @@ register.addEventListener('submit', (e) =>{
 
     console.log(object);
 
-    fetch('http://127.0.0.1:5000/v1/signup', {
+    fetch('http://rafaprueba.herokuapp.com/v1/signup', {
         method: 'POST',
         body: JSON.stringify(object),
         headers:{
@@ -79,7 +79,7 @@ signin.addEventListener('submit', (e) =>{
     
         console.log(objecto);
     
-        fetch('http://127.0.0.1:5000/v1/signin', {
+        fetch('http://rafaprueba.herokuapp.com/v1/signin', {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
@@ -104,7 +104,7 @@ signin.addEventListener('submit', (e) =>{
     
         console.log(objecto);
     
-        fetch('http://127.0.0.1:5000/v1/signin', {
+        fetch('http://rafaprueba.herokuapp.com/v1/signin', {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'

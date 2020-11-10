@@ -7,7 +7,7 @@ logout.addEventListener('click', () =>{
 
 /*
 current_usr.addEventListener('click',(e) => {
-    fetch('http://127.0.0.1:5000/v1/users/all').then(
+    fetch('http://rafaprueba.herokuapp.com/v1/users/all').then(
         res => {
             res.json().then(
                 data => {
