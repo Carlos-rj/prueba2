@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/dasstyle.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="side-menu">
+        <label>Dashboard</label>
+        <center>
+            <img src="{{ url_for('static', filename='img/undraw_profile_pic_ic5t.svg')}}" class="image" alt="">
+            <br><br>
+
+            <h2>Name</h2>
+            <h6>Admin</h6>
+        </center>
+        <br>
+
+        <a href="#"><i class="fa fa-users" id="users"></i><span>Users</span></a>
+        <a href="#"><i class="fa fa-music"></i><span>Songs</span></a>
+        <a href="#"><i class="fa fa-envelope"></i><span>Comments</span></a>
+        <a href="#"><i class="fa fa-plus"></i><span>Requests</span></a>
+        <a href="#"><i class="fa fa-user"></i><span>New Admin</span></a>
+        <a href="#"><i class="fa fa-cog"></i><span>Settings</span></a>
+        <a href="#" id="return_sign_in_btn"><i class="fa fa-sign-out"></i><span>Logout</span></a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:275px">
+        <div class="data" style="width: 98%;">
+
+            <h1>Users</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Password</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+            
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/dashboard.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/dasstyle.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="side-menu">
+        <label>Dashboard</label>
+        <center>
+            <img src="{{ url_for('static', filename='img/undraw_profile_pic_ic5t.svg')}}" class="image" alt="">
+            <br><br>
+
+            <h2>Name</h2>
+            <h6>User</h6>
+        </center>
+        <br>
+
+        <a href="#"><i class="fa fa-user" id="user"></i><span>Profile</span></a>
+        <a href="#"><i class="fa fa-music"></i><span>Songs</span></a>
+        <a href="#"><i class="fa fa-info-circle"></i><span>Song Details</span></a>
+        <a href="#"><i class="fas fa-bars"></i><span>Playlist</span></a>
+        <a href="#"><i class="fa fa-plus"></i><span>New Music</span></a>
+        <a href="#" id="return_sign_in_btn"><i class="fa fa-sign-out"></i><span>Logout</span></a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:275px">
+        <div class="data" style="width: 98%;">
+
+            <h1>Profile</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Username</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Password</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+            
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/dashboard.js')}}"></script>
+</body>
+
+</html>
