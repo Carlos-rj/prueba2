@@ -204,4 +204,5 @@ def remove_usr(username):
 def general():
     return render_template('contact-about.html')
 
-app.run(environ.get('PORT'))
+if __name__ == '__main__':
+    app.run()
