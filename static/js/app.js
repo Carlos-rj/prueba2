@@ -27,10 +27,8 @@ about_btn.addEventListener('click',() => {
     window.location="general";
 });
 
-register.addEventListener('submit', (e) =>{
+function Login(){
 
-    e.preventDefault();
-    
     var username = document.getElementById('username-in-form').value;
     var name = document.getElementById('name-in-form').value;
     var password = document.getElementById('password-in-form').value;
@@ -61,7 +59,7 @@ register.addEventListener('submit', (e) =>{
         } else {
             document.getElementById('alert-singup').innerHTML = `${response.message}`
         }});
-});
+}
 
 signin.addEventListener('submit', (e) =>{
     
