@@ -1,4 +1,3 @@
-from os import environ
 from flask import Flask, jsonify, render_template, redirect, url_for, request
 from flask_cors import CORS, cross_origin
 from users import User
@@ -204,4 +203,4 @@ def remove_usr(username):
 def general():
     return render_template('contact-about.html')
 
-app.run(environ.get('PORT'))
+app.run(port=8080, debug=True)
