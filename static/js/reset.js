@@ -12,7 +12,7 @@ recover_pswrd.addEventListener('submit', (e) =>{
     e.preventDefault();
     
     var username = document.getElementById('username').value;
-    var endpoint = 'http://rafaprueba.herokuapp.com/v1/recover-password/'.concat(username);
+    var endpoint = 'https://rafaprueba.herokuapp.com/v1/recover-password/'.concat(username);
 
     fetch(endpoint)
     .then(res => res.json())
